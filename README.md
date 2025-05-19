@@ -1,4 +1,5 @@
 to run this project you should:
+use node v20
 
 clone this repo, 
 
