@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  gap: 4px;
+  align-self: center;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 255, 0, 0.1);
+    }
+  }
+
+  &__arrow {
+    cursor: pointer;
+    &.right {
+      transform: rotate(270deg);
+    }
+    &.left {
+      transform: rotate(90deg);
+    }
+  }
+}

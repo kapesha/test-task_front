@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "types": ["vite/client"],
+    "jsx": "react-jsx",            // или "react" если старый React
+    "lib": ["DOM", "ESNext"],      // обязательно должна быть DOM
+    "module": "ESNext",
+    "target": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+    
+  }
+}

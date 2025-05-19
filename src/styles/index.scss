@@ -1,0 +1,15 @@
+@import "./mixins.scss";
+@import "./nullStile.scss";
+@import "../pages/MainPage/MainPage.scss";
+@import "../components/Item/Item.scss";
+@import "../components/ModalWindow/ModalWindow.scss";
+@import "../components/AddNew/AddNew.scss";
+@import "../components/Loader/Loader.scss";
+@import "../components/Pagination/Pagination.scss";
+@import "../pages/Superhero/Superhero.scss";
+@import "../components/FileInput/FileInput.scss";
+
+.main {
+  display: flex;
+  justify-content: center;
+}

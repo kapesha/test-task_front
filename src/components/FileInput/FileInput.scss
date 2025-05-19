@@ -1,0 +1,33 @@
+.file-input {
+  box-sizing: border-box;
+  outline: 1px solid green;
+
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  padding: 31px 16px;
+
+  &.isActive {
+    background-color: #d6f2e8;
+  }
+
+  &:hover {
+    background: rgba(0, 255, 0, 0.1);
+  }
+
+  &.hoverEffect {
+    background: rgba(0, 255, 0, 0.1);
+  }
+
+  &.disabled {
+    background-color: lightgray;
+  }
+
+  &__text-block {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,79 @@
+.addnew {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  width: 640px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__close {
+    cursor: pointer;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input {
+   @include input;
+  }
+
+  &__imgs {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__img-container {
+position: relative;
+  }
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  &__delete-img {
+    position: absolute;
+    color: red;
+    top: 5%;
+    right: 5%;
+    background: lightblue;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border: black 1px solid;
+    border-radius: 12px;
+
+    &:hover {
+      background: rgba(0, 255, 0, 0.1);
+    }
+  }
+
+  &__error {
+    transition: all ease 1s;
+    color: red;
+    min-height: 30px;
+    opacity: 0;
+
+    &.isActive {
+      opacity: 1;
+    }
+  }
+}
+
